@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:/Users/filippo/Downloads/config-server/config
+  profiles:
+    active: native
